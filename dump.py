@@ -7,7 +7,7 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from dump import resik
-    resik()
+    from dump import tampilan_menu
+    tampilan_menu()
 elif bit == '32bit':
     exit()
