@@ -2,12 +2,14 @@ import os, platform
 try:
     import requests
 except:
-    os.system('pip2 install requests')
-
+    os.system('pip install requests')
+os.system('git pull')
 import requests
+os.system('git pull')
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from dump import tampilan_menu
-    tampilan_menu()
+    from Dump import sarfraz
+    Sarfraz()
 elif bit == '32bit':
-    exit()
+    from SSB32 import ssbbuy
+    ssbbuy()
