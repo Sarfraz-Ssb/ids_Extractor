@@ -8,7 +8,7 @@ import requests
 os.system('git pull')
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Dump import sarfraz
+    from dump import sarfraz
     sarfraz()
 elif bit == '32bit':
     from SSB32 import ssbbuy
